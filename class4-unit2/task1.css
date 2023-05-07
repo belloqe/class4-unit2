@@ -1,0 +1,267 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Estilos para desktop */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+body{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.container{
+  display: block;
+  width: 100%;
+  gap: 10px;
+  padding: 10px;
+  max-width: 1050px;
+}
+
+main {
+  display: block;
+  width: 1900px;
+  height: auto;
+  margin: 3%;
+  padding-top: 10%;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  font: 1.2em Helvetica, Arial, sans-serif;
+  padding: 1em;
+}
+
+.videos {
+  display: block;
+}
+
+video {
+  width: 800px;
+  height: auto;
+}
+
+.mensagem {
+  display: block;
+  padding: 90px;
+}
+
+.container{
+  width: 100%;
+  padding: 60px;
+  max-width: 1050px;
+}
+
+section{
+  padding-top: 45px;
+  background: #fff;
+  border-radius: 7px;
+}
+
+.tools-board{
+  width: 1050px;
+  display: flex;
+  padding: 15px 22px 0;
+}
+.tools-board .row{
+  width: 25%;
+  height: 25%;
+  margin-bottom: 20px;
+}
+.row .options{
+  display: block;
+  list-style: none;
+  margin: 15px 0 0 10px;
+}
+.row .options .option{
+  display: block;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.option:is(:hover, .active) img{
+  filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg) brightness(100%) contrast(100%);
+}
+.option :where(span, label){
+  color: #5A6168;
+  cursor: pointer;
+  padding-left: 10px;
+}
+.option:is(:hover, .active) :where(span, label){
+  color: #4A98F7;
+}
+.option #fill-color{
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+}
+#fill-color:checked ~ label{
+  color: #4A98F7;
+}
+.option #size-slider{
+  width: 100%;
+  height: 10px;
+  margin-top: 10px;
+}
+.colors .options{
+  display: flex;
+  justify-content: space-between;
+}
+.colors .option{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-top: 3px;
+  position: relative;
+}
+.colors .option:nth-child(1){
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+}
+.colors .option:nth-child(2){
+  background-color: #000;
+}
+.colors .option:nth-child(3){
+  background-color: #E02020;
+}
+.colors .option:nth-child(4){
+  background-color: #6DD400;
+}
+.colors .option:nth-child(5){
+  background-color: #4A98F7;
+}
+.colors .option.selected::before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  height: 12px;
+  width: 12px;
+  background: inherit;
+  border-radius: inherit;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+}
+.colors .option:first-child.selected::before{
+  border-color: #ccc;
+}
+.option #color-picker{
+  opacity: 0;
+  cursor: pointer;
+}
+.buttons button{
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 11px 0;
+  font-size: 0.9rem;
+  margin-bottom: 13px;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons .clear-canvas{
+  color: #6C757D;
+  border: 1px solid #6C757D;
+  transition: all 0.3s ease;
+}
+
+.clear-canvas:hover{
+  color: #fff;
+  background: #6C757D;
+}
+.buttons .save-img{
+  background: #4A98F7;
+  border: 1px solid #4A98F7;
+}
+.drawing-board{
+  flex: 1;
+  overflow: hidden;
+  height: 500px;
+  border: 2px solid #6C757D;
+}
+.drawing-board canvas{
+  width: 100%;
+  height: 100%;
+}
+
+/* container2 */
+img.images {
+  width: 50%;
+  display: block;
+  height: auto;
+}
+
+div.container2 {
+  text-align: center;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+.container2:hover .overaly {
+  opacity: 1;
+}
+
+footer {
+  width: 100%; 
+  height: 30px;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: #de0707;
+}
+.copyright {
+  text-align: center;
+  height: 50%;
+  font-size: 14px;
+} 
